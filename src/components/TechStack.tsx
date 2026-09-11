@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { useRef, useMemo, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Environment } from "@react-three/drei";
+import { Environment, Text } from "@react-three/drei";
 import { EffectComposer, N8AO } from "@react-three/postprocessing";
 import {
   BallCollider,
@@ -13,25 +13,41 @@ import {
 
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
-  "/images/react2.webp",
-  "/images/next2.webp",
-  "/images/node2.webp",
-  "/images/express.webp",
-  "/images/mongo.webp",
   "/images/mysql.webp",
-  "/images/typescript.webp",
-  "/images/javascript.webp",
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
+const skills = [
+  "Python",
+  "SQL",
+  "LangChain",
+  "LangGraph",
+  "LLMs",
+  "RAG",
+  "MCP",
+  "ChatGroq",
+  "Streamlit",
+  "Pandas",
+  "NumPy",
+  "Matplotlib",
+  "Seaborn",
+  "MySQL",
+  "Git & GitHub",
+  "Jupyter Notebook",
+  "Google Colab",
+  "VS Code",
+  "PyCharm",
+];
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
 
-const spheres = [...Array(30)].map(() => ({
+const spheres = skills.map((skill) => ({
+  skill,
   scale: [0.7, 1, 0.8, 1, 1][Math.floor(Math.random() * 5)],
 }));
 
 type SphereProps = {
   vec?: THREE.Vector3;
+  skill: string;
   scale: number;
   r?: typeof THREE.MathUtils.randFloatSpread;
   material: THREE.MeshPhysicalMaterial;
@@ -40,6 +56,7 @@ type SphereProps = {
 
 function SphereGeo({
   vec = new THREE.Vector3(),
+  skill,
   scale,
   r = THREE.MathUtils.randFloatSpread,
   material,
@@ -87,6 +104,20 @@ function SphereGeo({
         material={material}
         rotation={[0.3, 1, 1]}
       />
+      <Text
+        position={[0, 0, 1.02]}
+        fontSize={0.18}
+        maxWidth={1.55}
+        lineHeight={1.1}
+        textAlign="center"
+        anchorX="center"
+        anchorY="middle"
+        color="white"
+        outlineColor="#111111"
+        outlineWidth={0.015}
+      >
+        {skill}
+      </Text>
     </RigidBody>
   );
 }

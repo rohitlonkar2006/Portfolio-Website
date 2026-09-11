@@ -7,9 +7,9 @@ const About = () => {
         <h3 className="title">About Me</h3>
         <p className="para">
           Computer Science Engineering student and Agentic AI Developer with
-          hands-on experience in Python, LLMs, LangChain, LangGraph, RAG, and
-          data analysis. I build practical AI applications that connect
-          intelligent agents with tools, memory, and real-world workflows.
+          hands-on experience in LangChain, LangGraph, MCP, and RAG. I build
+          practical AI applications that connect intelligent agents with tools,
+          memory, and real-world workflows.
         </p>
         <p className="para">
           Oracle Agentic AI Certified Foundations Associate.

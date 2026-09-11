@@ -95,27 +95,10 @@ const WhatIDo = () => {
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">Python</div>
-                <div className="what-tags">SQL</div>
-                <div className="what-tags">LLMs</div>
                 <div className="what-tags">LangChain</div>
                 <div className="what-tags">LangGraph</div>
-                <div className="what-tags">RAG</div>
                 <div className="what-tags">MCP</div>
-                <div className="what-tags">ChatGroq</div>
-                <div className="what-tags">Streamlit</div>
-                <div className="what-tags">Pandas</div>
-                <div className="what-tags">NumPy</div>
-                <div className="what-tags">Three.js</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Css</div>
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Next.js</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">PHP</div>
-                <div className="what-tags">MySql</div>
+                <div className="what-tags">RAG</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -149,9 +132,10 @@ const WhatIDo = () => {
               <div className="what-content-flex">
                 <div className="what-tags">EDA</div>
                 <div className="what-tags">Data Cleaning</div>
-                <div className="what-tags">Matplotlib</div>
-                <div className="what-tags">Seaborn</div>
-                <div className="what-tags">MySQL</div>
+                <div className="what-tags">LangChain</div>
+                <div className="what-tags">LangGraph</div>
+                <div className="what-tags">MCP</div>
+                <div className="what-tags">RAG</div>
                 <div className="what-tags">Dashboarding</div>
                 <div className="what-tags">Pattern Recognition</div>
                 <div className="what-tags">Business Intelligence</div>

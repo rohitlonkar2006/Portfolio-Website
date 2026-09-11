@@ -12,25 +12,10 @@ import {
 } from "@react-three/rapier";
 
 const skills = [
-  "PY",
-  "SQL",
-  "LC",
-  "LG",
-  "LLM",
-  "RAG",
+  "LangChain",
+  "LangGraph",
   "MCP",
-  "Groq",
-  "ST",
-  "PD",
-  "NP",
-  "MPL",
-  "SNS",
-  "MySQL",
-  "GH",
-  "Jupyter",
-  "Colab",
-  "VS Code",
-  "PyCharm",
+  "RAG",
 ];
 const materialColors = ["#1976d2", "#00897b", "#6a1b9a", "#ef6c00"];
 

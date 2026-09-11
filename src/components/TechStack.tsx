@@ -11,19 +11,14 @@ import {
   RapierRigidBody,
 } from "@react-three/rapier";
 
-const skills = [
-  "LangChain",
-  "LangGraph",
-  "MCP",
-  "RAG",
-];
+const skills = ["LC", "LG", "MCP", "RAG"];
 const materialColors = ["#1976d2", "#00897b", "#6a1b9a", "#ef6c00"];
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
 
 const spheres = skills.map((skill) => ({
   skill,
-  scale: [0.7, 1, 0.8, 1, 1][Math.floor(Math.random() * 5)],
+  scale: 1,
 }));
 
 type SphereProps = {
@@ -86,17 +81,18 @@ function SphereGeo({
         rotation={[0.3, 1, 1]}
       />
       <Text
-        position={[0, 0, 1.01 * scale]}
-        scale={scale}
-        fontSize={0.18}
-        maxWidth={1.55}
+        position={[0, 0, scale + 0.035]}
+        fontSize={0.3}
+        maxWidth={1.5}
         lineHeight={1.1}
         textAlign="center"
         anchorX="center"
         anchorY="middle"
         color="white"
         outlineColor="#111111"
-        outlineWidth={0.015}
+        outlineWidth={0.02}
+        depthOffset={-1}
+        renderOrder={2}
       >
         {skill}
       </Text>

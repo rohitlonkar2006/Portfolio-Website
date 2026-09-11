@@ -6,9 +6,13 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+          Computer Science Engineering student and Agentic AI Developer with
+          hands-on experience in Python, LLMs, LangChain, LangGraph, RAG, and
+          data analysis. I build practical AI applications that connect
+          intelligent agents with tools, memory, and real-world workflows.
+        </p>
+        <p className="para">
+          Oracle Agentic AI Certified Foundations Associate.
         </p>
       </div>
     </div>

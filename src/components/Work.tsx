@@ -60,12 +60,12 @@ const Work = () => {
                   <h3>0{index + 1}</h3>
 
                   <div>
-                    <h4>Project Name</h4>
-                    <p>Category</p>
+                    <h4>AI Research Assistant</h4>
+                    <p>Agentic AI & Research</p>
                   </div>
                 </div>
                 <h4>Tools and features</h4>
-                <p>Javascript, TypeScript, React, Threejs</p>
+                <p>Python, LangChain, LangGraph, RAG, ChatGroq, Streamlit</p>
               </div>
               <WorkImage image="/images/placeholder.webp" alt="" />
             </div>

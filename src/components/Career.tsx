@@ -15,43 +15,42 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>AI & Machine Learning Intern</h4>
+                <h5>IICT | AI/ML Track</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>6 WEEKS</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Gained practical experience in AI concepts, Python, data
+              preprocessing, model development, and evaluation through applied
+              AI/ML projects.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Data Science Intern</h4>
+                <h5>V2V EdTech LLP | Python Specialization</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>6 WEEKS</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Processed 50,000+ records, analyzed 5+ datasets, created 15+
+              dashboards, and automated workflows that reduced analysis time
+              by 30%.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>B.Tech Computer Science & Engineering</h4>
+                <h5>MIT ADT University, Pune</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>2028</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Second-year student specializing in Data Science, Software
+              Engineering, and Database Systems. Current CGPA: 8.66.
             </p>
           </div>
         </div>

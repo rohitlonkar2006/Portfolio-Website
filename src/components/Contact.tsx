@@ -10,8 +10,8 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:example@mail.com" data-cursor="disable">
-                example@mail.com
+              <a href="mailto:lonkarrohit77@gmail.com" data-cursor="disable">
+                lonkarrohit77@gmail.com
               </a>
             </p>
             <h4>Phone</h4>
@@ -24,7 +24,7 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com"
+              href="https://github.com/rohitlonkar2006?tab=overview&from=2026-09-01&to=2026-09-09"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -32,7 +32,7 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/rohit-lonkar-746948274/"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -40,20 +40,12 @@ const Contact = () => {
               Linkedin <MdArrowOutward />
             </a>
             <a
-              href="https://x.com"
+              href="https://x.com/lonkarrohit77"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
             >
               Twitter <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
             </a>
           </div>
           <div className="contact-box">

@@ -11,32 +11,28 @@ import {
   RapierRigidBody,
 } from "@react-three/rapier";
 
-const textureLoader = new THREE.TextureLoader();
-const imageUrls = [
-  "/images/mysql.webp",
-];
-const textures = imageUrls.map((url) => textureLoader.load(url));
 const skills = [
-  "Python",
+  "PY",
   "SQL",
-  "LangChain",
-  "LangGraph",
-  "LLMs",
+  "LC",
+  "LG",
+  "LLM",
   "RAG",
   "MCP",
-  "ChatGroq",
-  "Streamlit",
-  "Pandas",
-  "NumPy",
-  "Matplotlib",
-  "Seaborn",
+  "Groq",
+  "ST",
+  "PD",
+  "NP",
+  "MPL",
+  "SNS",
   "MySQL",
-  "Git & GitHub",
-  "Jupyter Notebook",
-  "Google Colab",
+  "GH",
+  "Jupyter",
+  "Colab",
   "VS Code",
   "PyCharm",
 ];
+const materialColors = ["#1976d2", "#00897b", "#6a1b9a", "#ef6c00"];
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
 
@@ -105,7 +101,8 @@ function SphereGeo({
         rotation={[0.3, 1, 1]}
       />
       <Text
-        position={[0, 0, 1.02]}
+        position={[0, 0, 1.01 * scale]}
+        scale={scale}
         fontSize={0.18}
         maxWidth={1.55}
         lineHeight={1.1}
@@ -183,16 +180,15 @@ const TechStack = () => {
     };
   }, []);
   const materials = useMemo(() => {
-    return textures.map(
-      (texture) =>
+    return materialColors.map(
+      (color) =>
         new THREE.MeshPhysicalMaterial({
-          map: texture,
-          emissive: "#ffffff",
-          emissiveMap: texture,
-          emissiveIntensity: 0.3,
+          color,
+          emissive: color,
+          emissiveIntensity: 0.18,
           metalness: 0.5,
-          roughness: 1,
-          clearcoat: 0.1,
+          roughness: 0.35,
+          clearcoat: 0.4,
         })
     );
   }, []);
@@ -224,7 +220,7 @@ const TechStack = () => {
             <SphereGeo
               key={i}
               {...props}
-              material={materials[Math.floor(Math.random() * materials.length)]}
+              material={materials[i % materials.length]}
               isActive={isActive}
             />
           ))}

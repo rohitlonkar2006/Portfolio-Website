@@ -102,11 +102,23 @@ body {
 
 .techstack {
     width: 100%;
+    display: block;
+    clear: both;
     position: relative;
-    height: var(--vh);
+    height: 100svh;
+    min-height: 650px;
+    overflow: hidden;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: -100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    isolation: isolate;
+    z-index: 0;
+}
+
+.techstack canvas {
+    display: block;
+    position: relative;
+    z-index: 0;
 }
 
 .techstack h2 {
